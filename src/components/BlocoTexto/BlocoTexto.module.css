@@ -12,6 +12,7 @@
     width: 70%;
     padding: 0 1.5em;
     color: white;  
+
 }
 
 .Titulo{
@@ -21,7 +22,7 @@
 }
 
 .Txt{
-    font-size: 1.3em;
+    font-size: 1.5em;
     margin-bottom: 1em;
     text-align: left;
     word-wrap: break-word;
