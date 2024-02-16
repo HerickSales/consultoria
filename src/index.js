@@ -21,7 +21,7 @@ root.render(
     <div class="Content">
       <div className="HomeContainer">
 
-q        <div className="HomeText">
+        <div className="HomeText">
           <img src={foto} alt="Foto de perfil" class="ImgPrincipal"/>
           <BlocoTexto titulo="Sobre mim" txt={txtHome} />
         </div>
