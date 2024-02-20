@@ -8,19 +8,19 @@ import foto from './assets/FotoSemFundoPronta.png'
 import test from './assets/ImgAgachamento.jpg'
 import Wpp from './assets/wppIcon.png'
 import CardPrecos from './components/CardPrecos';
-import { motion } from 'framer-motion';
 import Carrosel from './components/Carrossel';
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const imgs= [test, test, test, test]
+
 root.render(
   <React.StrictMode>
-    <NavBar />
+   
     <div class="Content">
+      <NavBar/>
       <div className="HomeContainer">
-
         <div className="HomeText">
           <img src={foto} alt="Foto de perfil" class="ImgPrincipal"/>
           <BlocoTexto titulo="Sobre mim" txt={txtHome} />
@@ -29,13 +29,14 @@ root.render(
     </div>
 
     <div className='Consultoria'>
-      <div className='BackgroundImageLogo'></div>
+
 
       <h1 className='Titulo'>Quer saber mais sobre a meus serviços?</h1>
 
       <div className='CarrosselImg'>
         <Carrosel imgs={imgs} />
       </div>
+      <div className='BackgroundImageLogo'></div>
       <div className='Textos'>
         <BlocoTexto titulo="Consultoria" txt={txtConsultoria} />
       </div>
@@ -47,9 +48,8 @@ root.render(
         <CardPrecos preco='R$50,98' plano= 'Trimestral' descricao='3 fichas, 5 dietas 2 elefantes'/>
         </div>
          </div>
-
          <div className='Contato'>
-          <img src={Wpp}/>
+          <img src={Wpp} alt='IconWpp'/>
          </div>
 
   </React.StrictMode>

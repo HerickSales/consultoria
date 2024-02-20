@@ -9,10 +9,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 70%;
-    padding: 0 1.5em;
-    color: white;  
+    width: 100%;
+    max-width: 90%;
+    height: 100%;
 
+    max-height: 90%;
+    padding: 0 1.5em;
+    color: #ebebeb;  
 }
 
 .Titulo{
@@ -26,9 +29,24 @@
     margin-bottom: 1em;
     text-align: left;
     word-wrap: break-word;
-    line-height: 1.3em;
+    line-height: 1.4em;;
 }
 
+
+@media (max-width: 920px) {
+
+    .Textos{
+        padding: 0;
+    }
+    .Titulo{
+        font-size: 3.0em;
+    }
+    .Txt{
+        font-size: 1.5em;
+        word-wrap: break-word;
+    }
+    
+}
 
 
 

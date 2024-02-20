@@ -37,5 +37,18 @@
     transition: transform 0.5s;
 }
 
+@media  (max-width: 768px) {
+
+    .Inner{
+        display: flex;
+    }
+    .Img{
+        padding: 0 1em;
+        width: 200px;
+        height: 200px;
+    }
+     
+}
+
 
 

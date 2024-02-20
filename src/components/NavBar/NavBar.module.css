@@ -1,20 +1,64 @@
 .Container{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 5em;
     padding: 0.5em;
     background-image: linear-gradient( 15deg, rgb(0,24,69) 50%, rgb(0,0,0) 85%);
+   
+}
+.Container img{
+    width: 9em;
+    height: 5em;
+    margin: 0 2em;    
 }
 
 .NavBar{
     display: flex;
+    margin:0 4em;
     justify-content: space-between;
     padding: 0 1.5em;
     align-items: center;
 }
-
 .NavBar a{
     padding: 0 1em;
-
+    font-size: 1.5em;
 }
 
+.ImgMenu{
+    display: none;
+ 
+}
+
+@media (max-width: 768px){
+    .NavBar{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 5em;
+        right: 0; 
+        background-image: linear-gradient( 180deg, rgb(0,24,69) 50%, rgb(0,0,0) 85%);
+        padding: 2em;
+        border-radius: 0 0 0.5em 0.5em;
+        margin-right: 0.5em;
+        padding: 1em;
+        z-index: 1;
+    }
+    .NavBar a{
+        padding: 0.5em;
+        font-size: 1.5em;
+        color: #ebebeb;
+    }
+
+    .ImgMenu{
+        display: block;
+        margin: 0 2em;
+        width: 2em;
+        height: 2em;
+        color: #ebebeb;
+    }
+    
+    .ImgMenu:hover{
+        cursor: pointer;
+    }
+}

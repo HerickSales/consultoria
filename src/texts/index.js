@@ -1,12 +1,14 @@
 const txtHome =
-    `texto texto texto texto texto texto texto texto texto texto texto 
-texto texto texto texto texto texto texto texto texto texto texto texto 
-texto texto texto texto texto texto texto texto texto texto texto texto 
-texto texto texto texto texto texto texto texto texto texto texto texto 
-texto texto texto texto texto texto texto texto texto texto texto texto
-texto texto texto texto texto texto texto texto texto texto texto texto
-texto texto texto texto texto texto texto texto texto texto texto texto
-texto texto texto texto texto texto texto texto texto texto texto texto `
+    `Você está pronto para se comprometer com uma versão mais saudável,
+     mais forte e mais confiante de si mesmo? Se a resposta é sim,
+      você está no lugar certo! Sou [Nome do Personal Trainer],
+     e estou aqui para ser seu parceiro na jornada de
+      transformação do seu corpo e da sua mente.
+      Ao trabalharmos juntos, vamos desenvolver um programa de treinamento personalizado
+      , adaptado às suas necessidades específicas, preferências e objetivos.
+       Faremos uma avaliação abrangente da sua condição física atual,
+       estabeleceremos metas realistas e criaremos um plano de ação 
+       estratégico para garantir que você alcance o sucesso desejado. `
 
 const txtConsultoria =
     `A consultoria online visa melhorar a saúde física e
