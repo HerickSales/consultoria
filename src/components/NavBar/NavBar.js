@@ -1,5 +1,6 @@
 import styles from './NavBar.module.css';   
 import LogoBranca from '../../assets/Logo+&Lublogo.png';
+import {motion} from 'framer-motion';
 import { RxHamburgerMenu } from "react-icons/rx";
 import { useState } from 'react';
 
@@ -18,9 +19,10 @@ function closeMenu(){
 
 
 
-function NavBar(){
-    const [clicked, setClicked] = useState(false);
 
+function NavBar({nav}){
+    const [clicked, setClicked] = useState(false);
+  
     function MenuControl(){
         if(clicked){
             closeMenu()
@@ -30,19 +32,32 @@ function NavBar(){
             setClicked(true)
         }
     }
+
+    function scrollToRef(ref){
+    
+        ref.current.scrollIntoView({behavior: 'smooth'})
+        MenuControl()
+    }
    return(
      
-            <div className={styles.Container}>
+            <motion.div className={styles.Container}
+               
+                >
     
                 <img src={LogoBranca} alt="Logo da empresa"/>
                 <RxHamburgerMenu onClick={()=> MenuControl()} className={styles.ImgMenu} />
                 <nav className={styles.NavBar}>
-                    <a href="">Home</a>
-                    <a href="">Sobre</a>
-                    <a href="">Consultoria</a>
-                    <a href="">Contato</a>
+                    {
+                        nav.map((ref, index)=>{
+                            
+                            return(
+                                <button key={index} onClick={()=> scrollToRef(ref)} className={styles.NavButton}>{ref.current.className}</button>
+                            )
+                        })
+                    }
+                    
                 </nav>
-            </div>
+            </motion.div>
         )
 
     }

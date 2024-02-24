@@ -26,7 +26,7 @@ h1{
 
 }
 
-.Content{
+.Home{
 
   display: flex;
   flex-direction: column; 
@@ -71,6 +71,7 @@ h1{
   height: 100%; 
 }
 
+
 .Consultoria{
   display: flex;
   margin: 3em 1em;
@@ -111,7 +112,7 @@ h1{
 }
 
 
-.Precos{
+.Planos{
   display: flex;
   gap: 2em;
   align-items: center;
@@ -148,7 +149,7 @@ h1{
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
 
   .HomeContainer{
     display: flex;
@@ -156,11 +157,13 @@ h1{
     align-items: center;
     height: auto;
 
+
   } 
 
   .HomeText{
     padding: 2em;
     flex-direction: column;
+    margin-top: 5em;
   }
 
 

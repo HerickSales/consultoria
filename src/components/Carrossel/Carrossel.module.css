@@ -1,54 +1,53 @@
-.Carrossel{
+.Container{
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-
-
+    width:100%;
+    height: 100vh;
 }
-
 
 .Inner{
     display: flex;
-    
-}
-
-.Img{
-    display: flex;
-    padding: 0 2em;       
-    width:300px;
-    height:300px;
-    
-}
-
-.Img img{
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
-    border-radius: 20px;
-   
+    max-width: 1000px;
+    overflow-x: hidden;
 }
 
-.Img img:hover{
-    transform: scale(1.2);
-    filter: drop-shadow(3px 6px 8px #0466c8);
-    z-index: 1;
-  
-    transition: transform 0.5s;
-}
+.Imagens{
+    display:flex ;
+    gap:2em;
 
-@media  (max-width: 768px) {
-
-    .Inner{
-        display: flex;
-    }
-    .Img{
-        padding: 0 1em;
-        width: 200px;
-        height: 200px;
-    }
-     
 }
 
 
+.Imagem{
+    width:500px;
+    height: 500px;
+    margin: 0 10px;
+}
 
+.Imagem img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.Anterior,
+.Proximo{
+    position: relative;
+    top: 50%;
+    padding:5px;
+    width: 40px;
+    height: 40px;
+    background-color: #fefefe;
+    border-radius: 50%;
+}
+
+.Anterior{
+    left: -0.5em;
+}
+
+.Proximo{
+    right: -0.5em;
+}
