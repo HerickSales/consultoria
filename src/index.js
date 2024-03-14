@@ -81,8 +81,6 @@ function navPlanoTrimestral(){
 
       <h1 className='Titulo'>Quer saber mais sobre a meus serviços?</h1>
 
-
-      <div className='BackgroundImageLogo'></div>
       <div className='Textos'>
 
         <div className='TituloTopico'>
@@ -119,8 +117,7 @@ function navPlanoTrimestral(){
 
       <footer className='footer'>
         <p> Desenvolvido por: Herick Sales </p>
-        <p>contato: (22)999679064</p>
-        <p>email: hericksales789@gmail.com</p>
+        <p>contato: (22)999679064</p>x
       </footer>
   </React.StrictMode>
   )

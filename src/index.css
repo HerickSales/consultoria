@@ -105,16 +105,8 @@ h1{
   margin-bottom: 2em;
   align-self: center;
 }
-.BackgroundImageLogo{
-  background-image: url('./assets/Logo+&Sublogo.png');
-  background-repeat: no-repeat;
-  width: 95%;
-  height: 100%;
-  background-size: contain;
-  position: absolute;
-  opacity: 0.2;
-  z-index: -1;
-}
+
+
 
 .CarrosselImg{
   display: flex;
@@ -226,11 +218,8 @@ h1{
     margin: 1em;
 
   }
-  .BackgroundImageLogo{
 
-    background-position: center;
-
-  }
+  
 
   .Cards{
     flex-direction: column;
@@ -280,11 +269,7 @@ h1{
     margin: 1em;
 
   }
-  .BackgroundImageLogo{
 
-    background-position: center;
-
-  }
   
   .Cards{
     flex-direction: column;
