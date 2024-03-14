@@ -1,5 +1,5 @@
 import styles from './NavBar.module.css';   
-import LogoBranca from '../../assets/Logo+&Lublogo.png';
+import LogoBranca from '../../assets/Logo+&Sublogo.png';
 import {motion} from 'framer-motion';
 import { RxHamburgerMenu } from "react-icons/rx";
 import { useState } from 'react';
@@ -7,6 +7,7 @@ import { useState } from 'react';
 
 function showMenu(){
     const nav = document.querySelector('nav');
+    
     nav.style.display = 'flex';
 }
 
@@ -22,6 +23,7 @@ function closeMenu(){
 
 function NavBar({nav}){
     const [clicked, setClicked] = useState(false);
+    const isMobile = window.innerWidth <= 768;
   
     function MenuControl(){
         if(clicked){
@@ -36,7 +38,10 @@ function NavBar({nav}){
     function scrollToRef(ref){
     
         ref.current.scrollIntoView({behavior: 'smooth'})
-        MenuControl()
+        if(isMobile){
+            closeMenu()
+            setClicked(false)
+        }
     }
    return(
      

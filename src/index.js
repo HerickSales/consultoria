@@ -4,23 +4,28 @@ import './index.css';
 import { motion } from 'framer-motion';
 import NavBar from './components/NavBar/NavBar';
 import BlocoTexto from './components/BlocoTexto';
-import { txtHome, txtConsultoria } from './texts'
-import foto from './assets/FotoSemFundoPronta.png'
-import test from './assets/ImgAgachamento.jpg'
+import { txtHome, txtTop1,txtTop2,txtTop3 } from './texts'
+import foto from './assets/ImgPrincipal.png'
 import Wpp from './assets/wppIcon.png'
 import CardPrecos from './components/CardPrecos';
-import Carrosel from './components/Carrossel';
+import { BiSupport } from "react-icons/bi";
+import { FaClipboardList } from "react-icons/fa";
+import { FaMobileAlt } from "react-icons/fa";
+
+
+
+
+
 
 
 
 const App = () => {
-  const imgs= [test, foto, Wpp, test,foto,Wpp,test];
-
 
   const [nav, setNav]= useState([]);
   const home= useRef();
   const servicos = useRef();
   const planos = useRef();
+  
   
   async function carregaComponentes(){
 
@@ -30,6 +35,17 @@ const App = () => {
   useEffect(()=>{
     carregaComponentes()
   },[]);
+function navWpp(){
+  window.open('https://wa.me/message/WOTG2BNYUS7OI1');
+} 
+
+function navPlanoMensal(){
+
+    window.open('https://pages.mfitpersonal.com.br/index?acao=page&tipo=2&buyPage=63767&page=63767')
+}
+function navPlanoTrimestral(){
+    window.open('https://pages.mfitpersonal.com.br/index?acao=page&tipo=2&buyPage=63768&page=63767')
+  }
 
   return (
 
@@ -41,40 +57,71 @@ const App = () => {
       <div className="HomeContainer">
 
         <div className="HomeText" >
+       
+
+          
           <motion.img src={foto} alt="Foto de perfil" className="ImgPrincipal"
             initial={{  x: -100 }}
             animate={{  x: 0 }}
             
             transition={{ duration: 1 }}
           />
-          <BlocoTexto titulo="Sobre mim" txt={txtHome} />
+         
+            <BlocoTexto titulo="Sobre mim" txt={txtHome} />
+          
         </div>
-      </div>
+      </div>  
+    </div>
+
+    <div className='suspiro'>
+
     </div>
 
     <div className='Consultoria' ref={servicos}>
 
       <h1 className='Titulo'>Quer saber mais sobre a meus serviços?</h1>
 
-      <div className='CarrosselImg'>
-        <Carrosel imgs={imgs} />
-      </div>
+
       <div className='BackgroundImageLogo'></div>
       <div className='Textos'>
-        <BlocoTexto titulo="Consultoria" txt={txtConsultoria} />
+
+        <div className='TituloTopico'>
+          <FaClipboardList className="Icon"/>
+          <h1 >Anamnese</h1>
+        </div>
+        <BlocoTexto titulo="" txt={txtTop1} />
+
+        <div className='TituloTopico'>
+          <BiSupport className="Icon" />
+          <h1 >Suporte</h1>
+        </div>
+        <BlocoTexto titulo="" txt={txtTop2} />
+
+        <div className='TituloTopico'>
+          <FaMobileAlt className="Icon" />
+          <h1 >Aplicativo</h1>
+        </div>
+        <BlocoTexto titulo="" txt={txtTop3} />
       </div>
     </div>
     <div className='Planos' ref={planos}>  
       <h1  className='Titulo'>PLANOS</h1>
         <div className='Cards'>
-        <CardPrecos preco='R$50,98' plano= 'mensal' descricao='3 fichas, 5 dietas 2 elefantes'/>
-        <CardPrecos preco='R$50,98' plano= 'Trimestral' descricao='3 fichas, 5 dietas 2 elefantes'/>
+          
+        <CardPrecos preco='R$170,00' plano= 'mensal' descricao='3 fichas, 5 dietas 2 elefantes' onclick={navPlanoMensal}/>
+        <CardPrecos preco='R$300,00' promocao='R$510,00' plano= 'Trimestral' descricao='3 fichas, 5 dietas 2 elefantes' onclick={navPlanoTrimestral}/>
         </div>
          </div>
          <div className='Contato'>
-          <img src={Wpp} alt='IconWpp'/>
+          <img src={Wpp} alt='IconWpp' onClick={()=> navWpp()}/>
+          
          </div>
 
+      <footer className='footer'>
+        <p> Desenvolvido por: Herick Sales </p>
+        <p>contato: (22)999679064</p>
+        <p>email: hericksales789@gmail.com</p>
+      </footer>
   </React.StrictMode>
   )
 }

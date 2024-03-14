@@ -1,23 +1,30 @@
 const txtHome =
-    `Você está pronto para se comprometer com uma versão mais saudável,
-     mais forte e mais confiante de si mesmo? Se a resposta é sim,
-      você está no lugar certo! Sou [Nome do Personal Trainer],
-     e estou aqui para ser seu parceiro na jornada de
-      transformação do seu corpo e da sua mente.
-      Ao trabalharmos juntos, vamos desenvolver um programa de treinamento personalizado
-      , adaptado às suas necessidades específicas, preferências e objetivos.
-       Faremos uma avaliação abrangente da sua condição física atual,
-       estabeleceremos metas realistas e criaremos um plano de ação 
-       estratégico para garantir que você alcance o sucesso desejado. `
+    `Você está pronto para chegar na sua melhor versão? Eu sou Thiago Sales personal
+     trainer e vou te ajudar nessa jornada!! O meu objetivo é trazer pra você uma rotina de treino 
+     estimulante, que você consiga seguir e mais importante, manter. Para correr de treinos já prontos, 
+     eu mesmo vou programar sua rotina de treino levando em consideração seu objetivo, tempo e limitações.
+     Quero te ajudar a conquistar o corpo que você sempre quis e para isso só preciso da sua dedicação!
+     Com essa rotina de treino, trabalhando com uma variação de estímulos, tenho certeza que, juntos, 
+     vamos alcançar seu objetivo!!
+    `
 
-const txtConsultoria =
-    `A consultoria online visa melhorar a saúde física e
-    mental, priorizando bem-estar, performance e estética.
-    Avaliações são realizadas durante o treinamento. Semanalmente,
-    é enviado um resumo do treinamento e são solicitados
-    feedbacks sobre dificuldades e progressos para ajustes no
-    planejamento. Um questionário é necessário para melhor
-    planejamento do treinamento, e o consultor está disponível
-    para esclarecer dúvidas e garantir excelência no trabalho conjunto.`
+const txtTop1 =
+    `Além de uma conversa no Whatsapp, envio um um questionário
+     com perguntas formuladas por mim,
+     que levo como base para programar e
+     prescrever de forma mais eficiente os seus treinos.`
 
-export { txtHome,txtConsultoria }
+const txtTop2 =`
+    Você terá o meu contato para tirar qualquer dúvida
+    que possa surgir durante o acompanhamento,
+    fazer ajustes nos treinos caso necessários e avaliação
+    das execuções que é dessa forma que podemos ver a qualidade
+    dos movimentos.Dessa forma você sempre esterá em contato
+    comigo para juntos alcançarmos excelentes resultados. `
+
+const txtTop3 = `
+    O treino é disponibilizado através de um aplicativo com vídeos de execução dos exercício,
+    é através dele que disponibilizo também o questionário e a avaliação física!!
+    ` 
+
+export { txtHome, txtTop1, txtTop2, txtTop3}

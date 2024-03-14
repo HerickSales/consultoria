@@ -32,8 +32,12 @@
     font-size: 1.2em;
     font-weight: 500;
     transition: 0.3s;
-    padding: 1em
-
+    padding: 1em;
+    cursor: pointer;
+}
+.NavBar button:hover{
+    color: #0466c8;
+    transition: 0.3s;
 }
 
 
