@@ -117,7 +117,7 @@ function navPlanoTrimestral(){
 
       <footer className='footer'>
         <p> Desenvolvido por: Herick Sales </p>
-        <p>contato: (22)999679064</p>x
+        <p>contato: (22)999679064</p>
       </footer>
   </React.StrictMode>
   )
