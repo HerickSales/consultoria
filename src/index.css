@@ -3,7 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
-  background-image: linear-gradient( 170deg, rgb(4,102,200) 5%, rgb(0,24,69) 85%);
+  background-image:linear-gradient( 170deg, rgb(2, 62, 125) 5% ,rgb(0,24,69) 90%);
+
 }
 
 #root{
@@ -22,7 +23,6 @@ a:hover {
 h1{
   font-size: 3em;
   color: #EBEBEB;
-  margin: 10px;
   filter:drop-shadow(0px 0px 5px #0466c8); 
 
 }
@@ -41,43 +41,39 @@ h1{
 
 }
 
-.HomeContainer{
-  position: relative;
-  display: flex;
-  height: autp;
-}
-.HomeContainer ::before{
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
+.FrasePrincipal{
+  margin-top:100px;
   width: 100%;
-  height: 100%;
-  background-image: url('./assets/ImgDeadlift.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-  opacity: 0.05; 
-  z-index:-1 ; 
-  
+  text-align: center;     
+}
+
+
+
+.HomeContainer{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+
+}
+.ImgPrincipal{
+  margin-top: 100px;
+  width:  30%;
 }
 
 .HomeText{
-  
-  padding: 5em; 
+  margin-top:0;
   display: flex;
   width: 100%;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
 }
 
-.ImgPrincipal{  
-  width: 100%;   
-  height: 100%;
-  
-}
+
 
 
 .suspiro{
@@ -127,13 +123,13 @@ h1{
   display: flex;
   width:100%;
   flex-direction: row;
-  align-items: center;
+  align-items: center; 
   justify-content: flex-start;
   justify-self: self-start;
   filter:drop-shadow(0px 0px 10px #000);
 }
 .Icon{
- color: #000;
+ color: #fff;
   margin: 0 1em;
   font-size: 2em;
   filter:drop-shadow(0px 0px 5px #0466c8);
@@ -185,11 +181,48 @@ h1{
   background-color: #000;
   color: #EBEBEB;
   font-size: 1em;
-  position: relative;
+
   bottom: 0;
   width: 100%;
   height: 100px;
   z-index: 1;
+}
+
+
+@media (min-width: 1080px ) and (max-width: 1700px) {
+  .HomeContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  } 
+  
+  
+  
+  .HomeText{
+    padding: 2em;
+    flex-direction: column;
+    margin-top: 5em;
+  }
+  
+  .Consultoria{
+    height: auto;
+    margin: 1em;
+    
+  }
+  
+  
+  .Cards{
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer p{
+    font-size: 1.5em;
+    
+    
+  }
+  
 }
 @media (max-width: 1080px) {
 
@@ -201,11 +234,10 @@ h1{
 
 
   } 
-  .ImgPrincipal{
-    width: 60%;
-    height: 60%;
-  }
 
+.ImgPrincipal{
+  width:50%;
+}
   .HomeText{
     padding: 2em;
     flex-direction: column;
@@ -245,41 +277,8 @@ h1{
  
 }
 
-@media (min-width: 1080px ) and (max-width: 1700px) {
-  .HomeContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-  } 
-
+@media (max-width: 620px) {
   .ImgPrincipal{
-    width: 60%;
-    height: 60%;
+    width: 70%;
   }
-
-  .HomeText{
-    padding: 2em;
-    flex-direction: row;
-    margin-top: 5em;
-  }
-
-  .Consultoria{
-    height: auto;
-    margin: 1em;
-
-  }
-
-  
-  .Cards{
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer p{
-    font-size: 1.5em;
-    
-   
-  }
-
 }

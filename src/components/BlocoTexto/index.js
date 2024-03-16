@@ -7,6 +7,8 @@ function BlocoTexto({txt, titulo}){
     const Container= useRef();
     const [position, setPosition] = useState();
 
+   
+
     return (
         <div ref={Container} className={styles.Container}
 
@@ -16,7 +18,7 @@ function BlocoTexto({txt, titulo}){
                     animate={{ opacity: 1}}
                     transition={{duration: 0.5}}>
             <h1 className={styles.Titulo}>{titulo}</h1>
-            <p className={styles.Txt}>{txt}</p>
+            <p className={styles.Txt} dangerouslySetInnerHTML={{__html:txt}}></p>
 
             </motion.div>
         </div>

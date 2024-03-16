@@ -1,30 +1,31 @@
 const txtHome =
-    `Você está pronto para chegar na sua melhor versão? Eu sou Thiago Sales personal
-     trainer e vou te ajudar nessa jornada!! O meu objetivo é trazer pra você uma rotina de treino 
-     estimulante, que você consiga seguir e mais importante, manter. Para correr de treinos já prontos, 
-     eu mesmo vou programar sua rotina de treino levando em consideração seu objetivo, tempo e limitações.
-     Quero te ajudar a conquistar o corpo que você sempre quis e para isso só preciso da sua dedicação!
-     Com essa rotina de treino, trabalhando com uma variação de estímulos, tenho certeza que, juntos, 
-     vamos alcançar seu objetivo!!
+    `Se você busca algum desses objetivos: <strong id='Destaque'>Hipertrofia,
+    emagrecimento, funcionalidade saúde</strong> ou até mesmo
+        mais de um desses <strong>essa consultoria foi feita pra
+        você.</strong> Eu sou Thiago Sales personal trainer e vou te
+        ajudar nessa jornada!
     `
+const txtHome2= `Eu mesmo vou programar sua rotina de treino levando em consideração seu
+ objetivo,tempo e limitações. Quero te ajudar a conquistar ocorpo que você sempre quis e para isso só preciso da sua dedicação! 
+`
 
+const txtHome3 = `Para fugir dos treinos monótonos e mais importante, aumentar
+ ainda mais os resultados e também sua motivação, eu trabalho com uma variedade de
+  estímulos para conseguiro  máximo dos treinos!! Tenho certeza que juntos vamos alcançar
+   excelentes resultados.`
 const txtTop1 =
     `Além de uma conversa no Whatsapp, envio um um questionário
      com perguntas formuladas por mim,
      que levo como base para programar e
      prescrever de forma mais eficiente os seus treinos.`
 
-const txtTop2 =`
-    Você terá o meu contato para tirar qualquer dúvida
-    que possa surgir durante o acompanhamento,
-    fazer ajustes nos treinos caso necessários e avaliação
-    das execuções que é dessa forma que podemos ver a qualidade
-    dos movimentos.Dessa forma você sempre esterá em contato
-    comigo para juntos alcançarmos excelentes resultados. `
+const txtTop2 =`Você terá o meu contato para tirar qualquer dúvida que possa surgir,
+fazer ajustes nos treinos caso necessários e avaliação
+ das execuções que é dessa forma que podemos ver a qualidade dos movimentos. `
 
 const txtTop3 = `
     O treino é disponibilizado através de um aplicativo com vídeos de execução dos exercício,
     é através dele que disponibilizo também o questionário e a avaliação física!!
     ` 
 
-export { txtHome, txtTop1, txtTop2, txtTop3}
+export { txtHome,txtHome2,txtHome3, txtTop1, txtTop2, txtTop3}

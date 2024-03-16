@@ -4,13 +4,12 @@ import './index.css';
 import { motion } from 'framer-motion';
 import NavBar from './components/NavBar/NavBar';
 import BlocoTexto from './components/BlocoTexto';
-import { txtHome, txtTop1,txtTop2,txtTop3 } from './texts'
+import { txtHome,txtHome2,txtHome3, txtTop1,txtTop2,txtTop3 } from './texts'
 import foto from './assets/ImgPrincipal.png'
 import Wpp from './assets/wppIcon.png'
 import CardPrecos from './components/CardPrecos';
 import { BiSupport } from "react-icons/bi";
-import { FaClipboardList } from "react-icons/fa";
-import { FaMobileAlt } from "react-icons/fa";
+import { FaClipboardList,FaMobileAlt } from "react-icons/fa";
 
 
 
@@ -54,23 +53,23 @@ function navPlanoTrimestral(){
       <NavBar
         nav={nav}
       />
-      <div className="HomeContainer">
+      <div className="HomeContainer"> 
 
+      <motion.img src={foto} alt="Foto de perfil" className="ImgPrincipal"
+            initial={{  x: -100, opacity: 0}}
+            animate={{  x: 0, opacity: 1}}
+            transition={{ duration: 2 }}
+          />  
+
+<h1 className='FrasePrincipal'>MINHA CONSULTORIA É PARA VOCÊ!!</h1>
+          
         <div className="HomeText" >
-       
-
-          
-          <motion.img src={foto} alt="Foto de perfil" className="ImgPrincipal"
-            initial={{  x: -100 }}
-            animate={{  x: 0 }}
-            
-            transition={{ duration: 1 }}
-          />
-         
-            <BlocoTexto titulo="Sobre mim" txt={txtHome} />
-          
+            <BlocoTexto titulo='OBJETIVO' txt={txtHome}/>
+            <BlocoTexto titulo="PERSONALIZADO" txt={txtHome2}/>
+            <BlocoTexto titulo="VARIAÇÕES" txt={txtHome3}/>
         </div>
       </div>  
+
     </div>
 
     <div className='suspiro'>
@@ -79,7 +78,7 @@ function navPlanoTrimestral(){
 
     <div className='Consultoria' ref={servicos}>
 
-      <h1 className='Titulo'>Quer saber mais sobre a meus serviços?</h1>
+      <h1 className='Titulo'>SOBRE A CONSULTORIA</h1>
 
       <div className='Textos'>
 
