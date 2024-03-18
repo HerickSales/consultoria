@@ -8,8 +8,10 @@ import { txtHome,txtHome2,txtHome3, txtTop1,txtTop2,txtTop3 } from './texts'
 import foto from './assets/ImgPrincipal.png'
 import Wpp from './assets/wppIcon.png'
 import CardPrecos from './components/CardPrecos';
-import { BiSupport } from "react-icons/bi";
+import { BiSupport,BiCustomize } from "react-icons/bi";
 import { FaClipboardList,FaMobileAlt } from "react-icons/fa";
+import { SlTarget, SlGraph  } from "react-icons/sl";
+
 
 
 
@@ -24,7 +26,11 @@ const App = () => {
   const home= useRef();
   const servicos = useRef();
   const planos = useRef();
-  
+ const homeText= useRef()
+ 
+
+
+ 
   
   async function carregaComponentes(){
 
@@ -46,6 +52,10 @@ function navPlanoTrimestral(){
     window.open('https://pages.mfitpersonal.com.br/index?acao=page&tipo=2&buyPage=63768&page=63767')
   }
 
+
+  function animateHomeText(){
+ 
+  }
   return (
 
     <React.StrictMode>
@@ -55,21 +65,23 @@ function navPlanoTrimestral(){
       />
       <div className="HomeContainer"> 
 
-      <motion.img src={foto} alt="Foto de perfil" className="ImgPrincipal"
-            initial={{  x: -100, opacity: 0}}
-            animate={{  x: 0, opacity: 1}}
-            transition={{ duration: 2 }}
-          />  
+        <motion.img src={foto} alt="Foto de perfil" className="ImgPrincipal"
+          initial={{  x: -100, opacity: 0}}animate={{  x: 0, opacity: 1}}
+          transition={{ duration: 2 }}
+        />  
 
-<h1 className='FrasePrincipal'>MINHA CONSULTORIA É PARA VOCÊ!!</h1>
+        < h1 className='FrasePrincipal'>MINHA CONSULTORIA É PARA VOCÊ!!</h1>
           
-        <div className="HomeText" >
-            <BlocoTexto titulo='OBJETIVO' txt={txtHome}/>
-            <BlocoTexto titulo="PERSONALIZADO" txt={txtHome2}/>
-            <BlocoTexto titulo="VARIAÇÕES" txt={txtHome3}/>
-        </div>
+        <motion.div className="HomeText" id="homeText"ref={homeText}
+          initial={{y: 100, opacity: 0}}
+          animate={{ y: 0, opacity: 1}}
+          transition={{ duration: 2 }}
+        >
+            <BlocoTexto titulo='OBJETIVO' txt={txtHome} icon={<SlTarget className='Icon' />}/>
+            <BlocoTexto titulo="PERSONALIZADO" txt={txtHome2} icon={<BiCustomize className='Icon' />} />
+            <BlocoTexto titulo="VARIAÇÕES" txt={txtHome3} icon={<SlGraph className='Icon'/>}/>
+        </motion.div>
       </div>  
-
     </div>
 
     <div className='suspiro'>
@@ -81,24 +93,9 @@ function navPlanoTrimestral(){
       <h1 className='Titulo'>SOBRE A CONSULTORIA</h1>
 
       <div className='Textos'>
-
-        <div className='TituloTopico'>
-          <FaClipboardList className="Icon"/>
-          <h1 >Anamnese</h1>
-        </div>
-        <BlocoTexto titulo="" txt={txtTop1} />
-
-        <div className='TituloTopico'>
-          <BiSupport className="Icon" />
-          <h1 >Suporte</h1>
-        </div>
-        <BlocoTexto titulo="" txt={txtTop2} />
-
-        <div className='TituloTopico'>
-          <FaMobileAlt className="Icon" />
-          <h1 >Aplicativo</h1>
-        </div>
-        <BlocoTexto titulo="" txt={txtTop3} />
+        <BlocoTexto titulo="ANAMNESE" txt={txtTop1} icon={<FaClipboardList className="Icon"/>} />
+        <BlocoTexto titulo="SUPORTE" txt={txtTop2} icon={ <BiSupport className="Icon" />} />
+        <BlocoTexto titulo="APLICATIVO" txt={txtTop3} icon={<FaMobileAlt className="Icon" />} />
       </div>
     </div>
     <div className='Planos' ref={planos}>  
