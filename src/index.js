@@ -52,10 +52,6 @@ function navPlanoTrimestral(){
     window.open('https://pages.mfitpersonal.com.br/index?acao=page&tipo=2&buyPage=63768&page=63767')
   }
 
-
-  function animateHomeText(){
- 
-  }
   return (
 
     <React.StrictMode>
@@ -68,19 +64,16 @@ function navPlanoTrimestral(){
         <motion.img src={foto} alt="Foto de perfil" className="ImgPrincipal"
           initial={{  x: -100, opacity: 0}}animate={{  x: 0, opacity: 1}}
           transition={{ duration: 2 }}
+         
         />  
 
         < h1 className='FrasePrincipal'>MINHA CONSULTORIA É PARA VOCÊ!!</h1>
           
-        <motion.div className="HomeText" id="homeText"ref={homeText}
-          initial={{y: 100, opacity: 0}}
-          animate={{ y: 0, opacity: 1}}
-          transition={{ duration: 2 }}
-        >
+        <div className="HomeText">
             <BlocoTexto titulo='OBJETIVO' txt={txtHome} icon={<SlTarget className='Icon' />}/>
             <BlocoTexto titulo="PERSONALIZADO" txt={txtHome2} icon={<BiCustomize className='Icon' />} />
             <BlocoTexto titulo="VARIAÇÕES" txt={txtHome3} icon={<SlGraph className='Icon'/>}/>
-        </motion.div>
+        </div>
       </div>  
     </div>
 
@@ -90,7 +83,7 @@ function navPlanoTrimestral(){
 
     <div className='Consultoria' ref={servicos}>
 
-      <h1 className='Titulo'>SOBRE A CONSULTORIA</h1>
+      <h1 className='Titulo'>CONSULTORIA</h1>
 
       <div className='Textos'>
         <BlocoTexto titulo="ANAMNESE" txt={txtTop1} icon={<FaClipboardList className="Icon"/>} />

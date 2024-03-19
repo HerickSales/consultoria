@@ -13,9 +13,11 @@ function BlocoTexto({txt, titulo, icon}){
         <div ref={Container} className={styles.Container}
         >
             <motion.div className={styles.Textos}
-                    initial={{opacity: 0}}
-                    animate={{ opacity: 1}}
-                    transition={{duration: 0.5}}>
+                initial={{y: 100, opacity: 0}}
+                whileInView={{y: 0, opacity: 1 } }
+                transition={{ duration: 1 }}
+                >
+
 
             <div className={styles.DivTitulo}>
                {icon}
