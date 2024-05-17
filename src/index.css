@@ -43,6 +43,7 @@ h1{
 
 .FrasePrincipal{
   margin-top:0px;
+  font-size: 30px;
   width: 100%;
   text-align: center;     
 }
@@ -72,9 +73,6 @@ h1{
   align-items: center;
 
 }
-
-
-
 
 .suspiro{
   display: flex;

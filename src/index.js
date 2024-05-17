@@ -67,7 +67,8 @@ function navPlanoTrimestral(){
          
         />  
 
-        < h1 className='FrasePrincipal'>MINHA CONSULTORIA É PARA VOCÊ!!</h1>
+        < h1 className='FrasePrincipal'>Eu sou Thiago Sales personal trainer e vou te
+        ajudar nessa jornada!</h1>
           
         <div className="HomeText">
             <BlocoTexto titulo='OBJETIVO' txt={txtHome} icon={<SlTarget className='Icon' />}/>

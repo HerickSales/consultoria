@@ -2,8 +2,7 @@ const txtHome =
     `Se você busca algum desses objetivos: <strong id='Destaque'>Hipertrofia,
     emagrecimento, funcionalidade saúde</strong> ou até mesmo
         mais de um desses <strong>essa consultoria foi feita pra
-        você.</strong> Eu sou Thiago Sales personal trainer e vou te
-        ajudar nessa jornada!
+        você.</strong> 
     `
 const txtHome2= `Eu mesmo vou programar sua rotina de treino levando em consideração seu
  objetivo,tempo e limitações. Quero te ajudar a conquistar ocorpo que você sempre quis e para isso só preciso da sua dedicação! 
