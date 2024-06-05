@@ -72,22 +72,28 @@
   overflow: hidden;
   transition: all 0.5s ease-in-out;
 }
- .topic:active,
-  .topic:hover {
+.topicActive{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding:0.5em;
+  margin:1em;
+  border: 1px solid #0466c8;
+  border-radius: 10px;
   background-color: #000;
-  overflow: hidden;
-  z-index: 10;
+  width:400px;
   height: auto;
-  transition: 0.5
-
+  transition: all 0.5s ease-in-out;
 } 
 
 
-.topic h2{
+.topic h2,
+.topicActive h2{
   font-size: 32px;
   font-weight: 700;
   text-align: center;
 }
+.topicActive p,
 .topic p{
   font-size: 24px;
   font-weight: 500;

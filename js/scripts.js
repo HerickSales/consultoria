@@ -2,12 +2,33 @@ let run = document.getElementById('imgRun');
 let bodybuilding = document.getElementById('imgBodybuilding');
 let crossfit = document.getElementById('imgCrossfit');
 let phraseHelp = document.getElementById('phraseHelp');
+let topics= document.querySelectorAll('.topic')
+let topicClass=['topic', 'topicActive']
+
+
+
+topics.forEach(topic =>{  
+ topic.addEventListener('click', ()=>{
+    console.log('clock')
+    if(topic.classList==topicClass[0]){
+        topic.classList.remove('topic')
+        topic.classList.add(topicClass[1])
+    }else{
+        topic.classList.remove('topicActive')
+        topic.classList.add(topicClass[0])
+
+    }
+    console.log(topic.classList)
+   })
+})
+
 
 function opacityZero() {
     run.style.opacity = 0.3;
     bodybuilding.style.opacity = 0.3;
     crossfit.style.opacity = 0.3;
 }
+
 
 function imgsAnimation() {
     let phrases = [
