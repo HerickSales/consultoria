@@ -277,10 +277,10 @@
   .imgsTransition {
     flex-direction: column;
     max-height: 1000px;
-    height: 900px;
+    height: 600px;
   }
   .imgsTransition img{
-    max-height: 300px;
+    max-height: 150px;
   }
   .tittle {
     font-size: 32px;
