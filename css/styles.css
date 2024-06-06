@@ -105,7 +105,7 @@
     background-image: linear-gradient(180deg, #001845, #023e7d);
 }
 .transitionLightDark{
-    height: 90p x;
+    height: 90px;
     background-image: linear-gradient(180deg, #023e7d, #001845 );
 }
 
@@ -131,6 +131,15 @@
   object-position: top;
   width: 100%;
   opacity: 0.3;
+  transition: all 0.5s ease-in-out;
+}
+
+.imgsCarrousel{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  padding: 1em;
 }
 
 .containerDark{
@@ -255,6 +264,7 @@
   .header {
     flex-direction: column-reverse;
     height: auto;
+    align-items: center;
   }
   .mainImg {
     width: 90%;
@@ -280,7 +290,7 @@
     height: 600px;
   }
   .imgsTransition img{
-    max-height: 150px;
+    max-height: 200px;
   }
   .tittle {
     font-size: 32px;
