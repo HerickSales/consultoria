@@ -1,22 +1,31 @@
-
 let phraseHelp = document.getElementById('phraseHelp');
 let topics= document.querySelectorAll('.topic')
+let topicsActive= document.querySelectorAll('.topicActive')
 let topicClass=['topic', 'topicActive']
 
 
 
 
 topics.forEach(topic =>{  
- topic.addEventListener('click', ()=>{
-    console.log('clock')
-    if(topic.classList==topicClass[0]){
-        topic.classList.remove('topic')
-        topic.classList.add(topicClass[1])
-    }else{
-        topic.classList.remove('topicActive')
-        topic.classList.add(topicClass[0])
+    /*decid9r  a melhor animação */
+    topic.addEventListener('click', ()=>{
+        topic.style.animation='frontFlip 1s'
+        setTimeout(()=>{
+            topic.style.display='none';
+            topic.nextElementSibling.style.display='flex';
+        }, 400)
+    })
+})
 
-    }
-    console.log(topic.classList)
-   })
+topicsActive.forEach(topic =>{
+    topic.addEventListener('click', ()=>{
+        
+
+       
+            topic.previousElementSibling.style.display='flex';
+            topic.style.display='none';
+       
+        topic.previousElementSibling.style.animation='backFlip 1s';
+        
+    })
 })
