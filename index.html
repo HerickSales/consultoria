@@ -1,136 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Consultoria</title>
 </head>
+
 <body>
     <div class="container">
-        <div class="header" id="home">
-
-            <h2 class="mainPhrase">Eu sou Thiago Sales personal trainer<br> e vou te ajudar  nessa jornada!</h2>
-
-            <img class="mainImg" src="./assets/ImgPrincipal.png" alt="Fitness">
-        </div>
-        <div class="transitionDarkLight"></div>
-        <div class="containerLight" >
-            <div class="phrases">
-                <div class="topic">
-                    <h2 class="tittleTopic">Sobre o treino</h2>
-                    <p class="p-button">Clique para saber mais</p>
-                </div>
-                <div class="topicActive">
-                    <p class="paragraph">Se você busca algum desses objetivos: Hipertrofia,
-                        emagrecimento, funcionalidade saúde, performance ou até mesmo mais de
-                        um desses essa consultoria foi feita pra você.
-                    </p>
-                </div>  
-                <div class="topic">
-                    <h2 class="tittleTopic">Feito para você</h2>
-                    <p class="p-button">Clique para saber mais</p>
-                </div>              
-                <div class="topicActive">
-                    <p class="paragraph">Eu mesmo vou programar sua rotina de treino levando em consideração seu objetivo,tempo e
-                         limitações. Quero te ajudar a conquistar o objetivo que você sempre quis e para isso só preciso
-                          da sua dedicação!
-                    </p>
-                </div>
-                <div class="topic">
-                    <h2 class="tittleTopic">Treinamento Variado</h2>
-                    <p class="p-button">Clique para saber mais</p>
-                </div>
-                <div class="topicActive">
-                    <p class="paragraph">Para fugir dos treinos monótonos, e mais importante, aumentar ainda mais os resultados e
-                         também sua motivação, eu trabalho com uma variedade de estímulos para conseguir o máximo
-                          dos treinos!! Tenho certeza que juntos vamos alcançar excelentes resultados!
-                    </p>
-                </div>
-            </div> 
-        </div>
-        <div class="transitionLightDark"></div>
-
-        <div class="containerDark">
-            <h1 class="tittle">Sobre a consultoria</h1>
-            <div class="phrases" style="justify-content: space-around;">
-                
-                <div class="topic">
-                    <h2 class="tittleTopic">Sobre a avaliação física</h2>
-                    <p class="p-button">Clique para saber mais</p>
-                    </p>
-                </div>
-                <div class="topicActive">
-                    <p class="paragraph">Além de uma conversa no Whatsapp, envio um um questionário com perguntas
-                         formuladas por mim,que levo como base para programar e prescrever
-                          de forma mais eficiente os seus treinos
-                    </p>
-                </div>
-                <div class="topic">
-                    <h2 class="tittleTopic">Sobre o suporte </h2>
-                    <p class="p-button">Clique para saber mais</p>
-                </div>
-                <div class="topicActive">
-                    <p class="paragraph">
-                        O treino é disponibilizado através de um aplicativo com vídeos de execução dos exercícios,
-                         é através dele que disponibilizo também o questionário e a avaliação física!! Além disso,
-                            você terá meu contato para tirar dúvidas, fazer ajustes e assim melhorar a qualidade do treino.
-                    </p>
-                    
-                </div>
+        <nav class="navbar">
+            <h2 class="navbar-tittle">Thiago Sales</h2>
+            <div style="display: flex; align-items: center;">
+                <img class="menu" style="width:30px; height: 30px;" src="./assets/icons/menu.png" alt="">
+                <ul>
+                    <li class="navbar-list">
+                        <a href="#home">Home</a>
+                        <a href="./sobremim.html">sobre mim</a>
+                        <a href="#plans">planos</a>
+                        <a href="#contact">contato</a>
+                    </li>
+                </ul>
             </div>
-            </div> 
+        </nav>
+       
+
+        <div id="home" class="container-img">
+            <div class="card-ini">
+                <h2 class="tittle-card">Sou Thiago Sales,personal trainer</h2>
+                <p class="card-info">e vou te ajudar na sua jornada de treinamento</p>
+                <button id="btn-about" class="card-button">Sobre mim</button>
+            </div>
         </div>
-        <div class="transitionDarkLight"></div>
-        <div class="containerLight" id="products">
-            <h1 class="tittle">Meus planos</h1>
-            <div class="products">
-                <div class="product">
-                    <h2>Plano mensal</h2>
-                    <p>R$ 170,00</p>
-                    <a href="https://pages.mfitpersonal.com.br/index?acao=page&tipo=2&buyPage=63767&page=63767">Comprar</a>
+
+        <div class="container-prod">
+            <h2 class="tittle">Qual seu objetivo Atualmente?</h2>
+
+            <div class="cards-container">
+                <div class="tittle-card-prod">
+                    <h2>hipertrofia?</h2>
+                    <div class="card-img-container">
+                        <img id="img-hipertrofia"    src="./assets//imgs/hipertrofia.jpg" alt="">
+                        <p id="info-hipertrofia" class="d-none info-cards-img">
+                            Uma consultoria pode ajudar fornecendo orientação especializada,
+                             analisando a situação atual e propondo estratégias
+                             personalizadas para alcançar objetivos específicos, otimizar processos,
+                              resolver problemas e tomar decisões mais informadas e eficazes.
+                        </p>
+                    </div>
+
                 </div>
-                <div class="product">
-                    <h2>Plano trimestral</h2>
-                    <p class="discount">R$ 510,00</p>
-                    <p>R$300,00</p>
-                    <a href="https://pages.mfitpersonal.com.br/index?acao=page&tipo=2&buyPage=63768&page=63767">Comprar</a>
+                <div class="tittle-card-prod">
+                    <h2>emagrecimento?</h2>
+                    <div  class="card-img-container">
+                        <img id="img-emagrecimento" src="./assets//imgs/emagrecimento.jpg" alt="">
+                        <p id="info-emagrecimento"  class=" d-none info-cards-img"> 
+                            Uma consultoria de emagrecimento cria um plano personalizado,
+                             ajustado às necessidades individuais, com acompanhamento e suporte
+                              contínuo, facilitando a perda de peso de forma eficaz e saudável.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tittle-card-prod">
+                    <h2>funcionalidade?</h2>
+                    <div class="card-img-container">
+                        <img  id="img-funcionalidade" src="./assets//imgs/funcional.jpg" alt="">
+                        <p id="info-funcionalidade" class="d-none info-cards-img">
+                            Uma consultoria de funcionalidade melhora o desempenho físico
+                             ao criar planos personalizados que focam em mobilidade,
+                             força e equilíbrio, adaptados às necessidades individuais,
+                              ajudando a alcançar uma maior eficiência nas atividades diárias e esportivas.
+                           </p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="transitionLightDark"></div>
+        <div id="plans" class="container-plans">
+            <h2 class="tittle">Com minha consultoria voce conseguirá realizar quaisquer objetivos que possuir</h2>
+            <h3 class="subtittle">nao perca tempo e venha fazer parte do time!</h3>
+            <div class="cards-container">
+                <div class="card-plan">
+                    <h2 class="tittle-card-plan">Plano mensal</h2>
+                    <p class="card-info-plan">R$ 170,00</p>
+                    <button id="btn-mensal" class="card-button">Contratar</button>
+                </div>
+
+                <div class="card-plan">
+                    <h2 class="tittle-card-plan">Plano trimestral</h2>
+                    <p class="card-info-plan">R$ 300,00</p>
+                    <button id="btn-trimestral" class="card-button">Contratar</button>
+                </div>
+
+            </div>
+        </div>
+
         <div class="footer">
-            <div class="footerContent">
-              <div class="footerTexts">
-                <h1>Inicio</h1>
-                  <a href="#home"> Home</a>
-                     <!-- <a href="#phraseHelp">Meus serviços</a> -->
-                  <a href="#products"> meus Produtos</a>
-              </div>
-              <div class="footerTexts">
-                <div class="footerImgs">
-                  <a href="https://www.instagram.com/thiagosales_personal?igsh=M2wyZmtreXNqbmw4&utm_source=qr">
-                    <img src="./assets/instagram.png"
-                     alt="Instagram">
-                  </a>
-                  <a href="https://wa.me/message/WOTG2BNYUS7OI1">
-                    <img src="./assets/whatsapp.png"
-                     alt="whatsapp">
-                  </a>
-                </div>                
-              </div>
-            </div> 
+            <div class="frequent-questions">
+                <h3 class="subtittle" style="text-align: start; font-size: 2rem;">perguntas Frequentes:</h3>
+
+                <div class="container-ask">
+                    <p  class="ask">Como é feita a rotina de treino <img style="width:20px; height:20px" src="./assets/icons/arrow-down.png" alt=""></p>
+                    <p class="response d-none">
+                        Eu mesmo vou programar sua rotina de treino
+                        levando em consideração seu objetivo,tempo e limitações.
+                        Quero te ajudar a conquistar o objetivo que você sempre quis
+                        e para isso só preciso da sua dedicação!
+                    </p>
+                </div>
+
+                <div class="container-ask">
+                    <p class="ask">Onde o treino é disponibilizado <img style="width:20px; height:20px" src="./assets/icons/arrow-down.png" alt=""></p>
+                    <p class="response d-none ">
+                        O treino é disponibilizado através de um aplicativo
+                        ,é através dele que disponibilizotambém o questionário
+                        e a avaliação física!! Além disso, você terá meu contato
+                        para tirar dúvidas, fazer ajustese assim melhorar
+                        a qualidade do treino.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="container-contact" id="contact">
+                <h3 class="subtittle" style="text-align: start; font-size: 2rem;">Contato:</h3>
+                <div style="display:flex; gap:15px">
+                    <div class="container-img-contact">
+                        <a href="https://www.instagram.com/thiagosales_personal?igsh=M2wyZmtreXNqbmw4&utm_source=qr">
+                            <img id="insta-ico" src="./assets/imgs/instagram.png" alt="">
+                        </a>
+                    </div>
+                    <div class="container-img-contact">
+                        <a href="https://wa.me/message/WOTG2BNYUS7OI1">
+                            <img  id="wpp-ico" src="./assets/imgs/whatsapp.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <a href="https://wa.me/message/WOTG2BNYUS7OI1">
-        <img id="wppIcon" src="./assets/wppIcon.png" alt="Wpp" >
-    </a>
-    
-    
-    <script src="./js/scripts.js"></script>
-</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
 
-    
+</body>
 
 </html>
