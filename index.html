@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Consultoria</title>
 </head>
 
@@ -38,26 +39,26 @@
             <h2 class="tittle">Qual seu objetivo Atualmente?</h2>
 
             <div class="cards-container">
-                <div class="tittle-card-prod">
+                <div class="tittle-card-prod" data-aos="fade-right">
                     <h2>hipertrofia?</h2>
                     <div class="card-img-container">
-                        <img id="img-hipertrofia"    src="./assets//imgs/hipertrofia.jpg" alt="">
+                        <img id="img-hipertrofia" loading="lazy"    src="./assets//imgs/hipertrofia.jpg" alt="">
                     
                     </div>
 
                 </div>
-                <div class="tittle-card-prod">
+                <div class="tittle-card-prod" data-aos="fade-up">
                     <h2>emagrecimento?</h2>
                     <div  class="card-img-container">
-                        <img id="img-emagrecimento" src="./assets//imgs/emagrecimento.jpg" alt="">
+                        <img id="img-emagrecimento" loading="lazy" src="./assets//imgs/emagrecimento.jpg" alt="">
                   
                     </div>
                 </div>
 
-                <div class="tittle-card-prod">
+                <div class="tittle-card-prod" data-aos="fade-left">
                     <h2>funcionalidade?</h2>
                     <div class="card-img-container">
-                        <img  id="img-funcionalidade" src="./assets//imgs/funcional.jpg" alt="">
+                        <img  id="img-funcionalidade" loading="lazy" src="./assets//imgs/funcional.jpg" alt="">
                  
                     </div>
                 </div>
@@ -67,13 +68,13 @@
             <h2 class="tittle">Com minha consultoria você conseguirá realizar quaisquer objetivos que possuir</h2>
             <h3 class="subtittle">Nao perca tempo e venha fazer parte do time!</h3>
             <div class="cards-container">
-                <div class="card-plan">
+                <div class="card-plan" data-aos="zoom-in">
                     <h2 class="tittle-card-plan">Plano mensal</h2>
                     <p class="card-info-plan">R$ 170,00</p>
                     <button id="btn-mensal" class="card-button">Contratar</button>
                 </div>
 
-                <div class="card-plan">
+                <div class="card-plan" data-aos="zoom-in">
                     <h2 class="tittle-card-plan">Plano trimestral</h2>
                     <p class="card-info-plan">R$ 300,00</p>
                     <button id="btn-trimestral" class="card-button">Contratar</button>
@@ -126,7 +127,11 @@
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/script.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
