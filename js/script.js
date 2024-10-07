@@ -1,8 +1,6 @@
 function addEvents(){
     $('#btn-about').click(()=>{window.location.href = '../sobremim.html';});
-
-
-
+    
     $(".ask").click(function(){
         $(this).next().slideToggle();
         $(this).children().css('transform', $(this).next().css('display') == 'none' ? 'rotate(0deg)' : 'rotate(180deg)');
@@ -28,7 +26,6 @@ function addEvents(){
             $('.navbar-list').css("display","none");
         }        
     })
-    
 }
 
 addEvents();
