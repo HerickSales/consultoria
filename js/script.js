@@ -26,6 +26,14 @@ function addEvents(){
             $('.navbar-list').css("display","none");
         }        
     })
+
+ 
+}
+const preloader = document.querySelector('#pre-loader');
+if (preloader) {
+  window.addEventListener('load', () => {
+    preloader.remove();
+  });
 }
 
 addEvents();
