@@ -4,30 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <title>Consultoria</title>
 </head>
 
 <body>
-    <div class="container">
-        <nav class="navbar">
-            <h2 class="navbar-tittle">    Thiago Sales</h2>
-            <div style="display: flex; align-items: center;">
-                <img class="menu" style="width:30px; height: 30px;" src="./assets/icons/menu.png" alt="">
-                <ul>
-                    <li class="navbar-list">
-                        <a href="./index.html">Home</a>
-                        <a href="#sobremim.html">sobre mim</a>
+    <div class="box ">
+        <nav class="navbar navbar-expand-lg navbar-transparent">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Thiago sales</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+    
+              <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html#targets">consultoria</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html#plans">planos</a>
+                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/sobre mim"></a>  
                     </li>
                 </ul>
+              </div>
             </div>
         </nav>
+
         <div class="container-about">
-                <div class="container-img-about">
+                <div class="container-img-about"  style="margin-top: 90px;" data-aos="fade-right">
 
                     <img src="./assets/imgs/ImgPrincipal.png" alt="">
                 </div>
-                <div class="container-text">
+                <div class="container-text" data-aos="fade-left">
                     <p class="text-about">
                         Olá! Sou especialista com uma sólida formação acadêmica e experiência prática em áreas fundamentais para o seu desempenho.
                          Com uma Pós-Graduação em Fisiologia do Exercício, e cursos de extensão em Biomecânica Aplicada à Prática e Prescrição,
@@ -40,26 +56,34 @@
                 
             </div>
             
-        <div class="footer"> 
-            <div class="container-contact" id="contact">
-                <h3 class="subtittle" style="text-align: start; font-size: 2rem;">Contato:</h3>
-                <div style="display:flex; gap:15px">
-                    <div class="container-img-contact">
-                        <a href="https://www.instagram.com/thiagosales_personal?igsh=M2wyZmtreXNqbmw4&utm_source=qr">
-                            <img id="insta-ico" src="./assets/imgs/instagram.png" alt="">
-                        </a>
-                    </div>
-                    <div class="container-img-contact">
-                        <a href="https://wa.me/message/WOTG2BNYUS7OI1">
-                            <img  id="wpp-ico" src="./assets/imgs/whatsapp.png" alt="">
-                        </a>
+            <div class="d-grid container-fluid" style="background-color: var(--background-secondary);">   
+                <div class="d-flex justify-content-center">
+                    <div class="col-md-" id="contact">
+                        <h3 class="subtittle" style="text-align: start; font-size: 2rem;">Contato:</h3>
+                        <div style="display:flex; gap:15px">
+                            <div class="container-img-contact">
+                                <a href="https://www.instagram.com/thiagosales_personal?igsh=M2wyZmtreXNqbmw4&utm_source=qr">
+                                    <img id="insta-ico" src="./assets/imgs/instagram.png" alt="">
+                                </a>
+                            </div>
+                            <div class="container-img-contact">
+                                <a href="https://wa.me/message/WOTG2BNYUS7OI1">
+                                    <img id="wpp-ico" src="./assets/imgs/whatsapp.png" alt="">
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </div>
+    <div id="pre-loader"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/script.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

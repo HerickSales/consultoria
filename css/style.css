@@ -1,3 +1,4 @@
+
 :root {
     --background-primary: #1E1E1E; /* Cinza Escuro */
     --background-primary-transparent: rgba(30, 30, 30, 0.4); /* Cinza Escuro Transparente */
@@ -28,6 +29,7 @@ body{
     position: fixed;
     top:0;
     left:0;
+
     width: 100%;
     height: 100vh;
     background-color: #000;
@@ -72,7 +74,7 @@ body{
     display: none;
 }
 
-.container{
+.box{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -123,9 +125,12 @@ body{
     font-weight: 600;
 }
 
-.navbar-list a:hover{
-    color:var(--background-secondary)
+.navbar-nav:hover{
+    background-color: var(--background-secondary-transparent);
+    border-radius: 20px;
 }
+
+
 
 .navbar-tittle{
     font-size: 1.5rem;
@@ -133,6 +138,19 @@ body{
     margin-left: 30px;
 }
 
+.navbar-transparent{
+    background-color: transparent;
+    transition: 0.5s;
+    backdrop-filter: blur(10px); /* Efeito de desfoque */
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.2);
+    z-index: 1000;
+}
+
+
+
+.navbar-transparent a{
+    color: var(--text-primary);
+}
 
 
 .card-ini{
@@ -280,52 +298,26 @@ body{
     text-align: center;
 }
 
-.footer{
+.accordion-header button{
     background-color: #000;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    gap:40px;
-}
-
-.frequent-questions{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 15px;
     color: var(--text-primary);
+    border: none;
+}
+.accordion-header button::after{
+    color:#fff
 }
 
-.container-ask{
-    display: flex;
-    flex-direction: column;
-    border-bottom:solid 1px var(--border-color);
-    padding:5px;
-    gap:10px;
-    width: 400px;
-}
-
-.ask{
-    font-size: 1.5rem;
-    font-weight: 400;
+.accordion-item{
+    background-color: var(--background-secondary);
     color: var(--text-primary);
+    border: none;
+    border-radius: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
-    text-align: center;
-    display: flex;
-    gap:2px;
-    align-items: center;
 }
-.answer{
-    font-size: 1.2rem;
-    color: var(--text-primary);
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-    transition: 0.5s;
-   
-}
+
+
+
 
 .container-contact{
     display: flex;
@@ -378,35 +370,10 @@ body{
     }
 }
 
-
-@media (max-width:662px){
-    
-    .card-ini{
-        width:50%;
-        transform: translate(0%,-15% ); 
-    }
-
-    .footer{
-        flex-direction: column;
-        align-items: center;
-    }
-    .frequent-questions{
-        align-items: center;
-    }
-
-    .navbar-list{
-        flex-direction: column;
-        display: none;
-    }
-
-    .menu{
-        display:block
-    }
-}
-
-
 @media (max-width:500px){
     .container-ask{
         width: 250px;
     }
 }
+
+
