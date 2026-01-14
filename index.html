@@ -5,10 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Thiago Sales - Personal Trainer. Consultoria online personalizada para hipertrofia, emagrecimento e treino funcional.">
     <title>Thiago Sales | Personal Trainer</title>
+
+    <!-- Preload critical image -->
+    <link rel="preload" as="image" href="./assets/imgs/initial-img.jpg" fetchpriority="high">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
     <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Critical CSS for hero background -->
+    <style>
+        .hero__bg img {
+            content-visibility: auto;
+        }
+    </style>
 </head>
 <body>
     <!-- Preloader -->
@@ -61,7 +75,11 @@
         <!-- Hero Section -->
         <section class="hero" id="home">
             <div class="hero__bg">
-                <img src="./assets/imgs/initial-img.jpg" alt="Background" loading="eager">
+                <img src="./assets/imgs/initial-img.jpg"
+                     alt="Thiago Sales Personal Trainer"
+                     loading="eager"
+                     decoding="async"
+                     fetchpriority="high">
                 <div class="hero__overlay"></div>
             </div>
             <div class="hero__content container">
@@ -109,7 +127,10 @@
                 <div class="objetivos__grid">
                     <article class="objetivo__card" data-animate="fade-up" data-delay="100">
                         <div class="objetivo__image">
-                            <img src="./assets/imgs/hipertrofia.jpg" alt="Hipertrofia" loading="lazy">
+                            <img src="./assets/imgs/hipertrofia.jpg"
+                                 alt="Treino de Hipertrofia"
+                                 loading="lazy"
+                                 decoding="async">
                             <div class="objetivo__overlay"></div>
                         </div>
                         <div class="objetivo__content">
@@ -127,7 +148,10 @@
 
                     <article class="objetivo__card" data-animate="fade-up" data-delay="200">
                         <div class="objetivo__image">
-                            <img src="./assets/imgs/emagrecimento.jpg" alt="Emagrecimento" loading="lazy">
+                            <img src="./assets/imgs/emagrecimento.jpg"
+                                 alt="Treino para Emagrecimento"
+                                 loading="lazy"
+                                 decoding="async">
                             <div class="objetivo__overlay"></div>
                         </div>
                         <div class="objetivo__content">
@@ -145,7 +169,10 @@
 
                     <article class="objetivo__card" data-animate="fade-up" data-delay="300">
                         <div class="objetivo__image">
-                            <img src="./assets/imgs/funcional.jpg" alt="Funcionalidade" loading="lazy">
+                            <img src="./assets/imgs/funcional.jpg"
+                                 alt="Treino Funcional"
+                                 loading="lazy"
+                                 decoding="async">
                             <div class="objetivo__overlay"></div>
                         </div>
                         <div class="objetivo__content">
@@ -168,7 +195,10 @@
         <!-- Planos Section -->
         <section class="planos section" id="planos">
             <div class="planos__bg">
-                <img src="./assets/imgs/imgplans.jpg" alt="Background" loading="lazy">
+                <img src="./assets/imgs/imgplans.jpg"
+                     alt="Planos de Consultoria"
+                     loading="lazy"
+                     decoding="async">
                 <div class="planos__overlay"></div>
             </div>
             <div class="container">
