@@ -1,164 +1,384 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-    <meta charset="UTF-8">
-
+<html lang="pt-BR">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta name="description" content="Thiago Sales - Personal Trainer. Consultoria online personalizada para hipertrofia, emagrecimento e treino funcional.">
+    <title>Thiago Sales | Personal Trainer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Consultoria</title>
 </head>
-
 <body>
-    <div class="box">
-        <nav class="navbar navbar-expand-lg navbar-transparent container-fluid" >
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Thiago sales</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-
-              <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#targets">consultoria</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#plans">planos</a>
-                  </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="sobremim.html">sobre mim</a>  
-                    </li>
-                
-                </ul>
-              </div>
-            </div>
-        </nav>
-        
-       
-
-        <div id="home" class="container-img">
-            <div class="card-ini" data-aos="fade-right">
-                <h2 class="tittle-card">Sou Thiago Sales,personal trainer</h2>
-                <p class="card-info">e vou te ajudar na sua jornada de treinamento</p>
-                <button id="btn-about" class="card-button">Sobre mim</button>
-            </div>
-        </div>
-
-        <div class="container-prod" id="targets">
-            <h2 class="tittle">Qual seu objetivo Atualmente?</h2>
-
-            <div class="cards-container">
-                <div class="tittle-card-prod" data-aos="fade-right">
-                    <h2>hipertrofia?</h2>
-                    <div class="card-img-container">
-                        <img id="img-hipertrofia" loading="lazy"    src="./assets//imgs/hipertrofia.jpg" alt="">
-                    
-                    </div>
-
-                </div>
-                <div class="tittle-card-prod" data-aos="fade-up">
-                    <h2>emagrecimento?</h2>
-                    <div  class="card-img-container">
-                        <img id="img-emagrecimento" loading="lazy" src="./assets//imgs/emagrecimento.jpg" alt="">
-                  
-                    </div>
-                </div>
-
-                <div class="tittle-card-prod" data-aos="fade-left">
-                    <h2>funcionalidade?</h2>
-                    <div class="card-img-container">
-                        <img  id="img-funcionalidade" loading="lazy" src="./assets//imgs/funcional.jpg" alt="">
-                 
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="plans" class="container-plans">
-            <h2 class="tittle">Com minha consultoria você conseguirá realizar quaisquer objetivos que possuir</h2>
-            <h3 class="subtittle">Nao perca tempo e venha fazer parte do time!</h3>
-            <div class="cards-container">
-                <div class="card-plan" data-aos="zoom-in">
-                    <h2 class="tittle-card-plan">Plano mensal</h2>
-                    <p class="card-info-plan">R$ 170,00</p>
-                    <button id="btn-mensal" class="card-button">Contratar</button>
-                </div>
-
-                <div class="card-plan" data-aos="zoom-in">
-                    <h2 class="tittle-card-plan">Plano trimestral</h2>
-                    <p class="card-info-plan">R$ 300,00</p>
-                    <button id="btn-trimestral" class="card-button">Contratar</button>
-                </div>
-
-            </div>
-        </div>
-
-
-        <div class="d-grid bg-black container-fluid">   
-            <div class="row">
-                <div class="col-md-8 mb-4"> <!-- Adicionando margem inferior ao acordeão -->
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button" type="button"
-                                 data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                    Como é feita a rotina de treino 
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    Eu mesmo vou programar sua rotina de treino levando em consideração seu objetivo, tempo e limitações. Quero te ajudar a conquistar o objetivo que você sempre quis e para isso só preciso da sua dedicação!
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                 aria-expanded="false" aria-controls="collapseTwo">
-                                    Onde o treino é disponibilizado
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    O treino é disponibilizado através de um aplicativo, é através dele que disponibilizo também o questionário e a avaliação física! Além disso, você terá meu contato para tirar dúvidas, fazer ajustes e assim melhorar a qualidade do treino.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4" id="contact">
-                    <h3 class="subtittle" style="text-align: start; font-size: 2rem;">Contato:</h3>
-                    <div style="display:flex; gap:15px">
-                        <div class="container-img-contact">
-                            <a href="https://www.instagram.com/thiagosales_personal?igsh=M2wyZmtreXNqbmw4&utm_source=qr">
-                                <img id="insta-ico" src="./assets/imgs/instagram.png" alt="">
-                            </a>
-                        </div>
-                        <div class="container-img-contact">
-                            <a href="https://wa.me/message/WOTG2BNYUS7OI1">
-                                <img id="wpp-ico" src="./assets/imgs/whatsapp.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="loader"></div>
     </div>
-    <div id="pre-loader"></div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Thiago<span>Sales</span></a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#objetivos" class="nav__link">Objetivos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#planos" class="nav__link">Planos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#faq" class="nav__link">FAQ</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="sobremim.html" class="nav__link">Sobre mim</a>
+                    </li>
+                </ul>
+                <button class="nav__close" id="nav-close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <button class="nav__toggle" id="nav-toggle">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero__bg">
+                <img src="./assets/imgs/initial-img.jpg" alt="Background" loading="eager">
+                <div class="hero__overlay"></div>
+            </div>
+            <div class="hero__content container">
+                <div class="hero__data" data-animate="fade-right">
+                    <span class="hero__subtitle">Personal Trainer</span>
+                    <h1 class="hero__title">
+                        Sou <strong>Thiago Sales</strong>
+                    </h1>
+                    <p class="hero__description">
+                        E vou te ajudar na sua jornada de transformação física.
+                        Treinos personalizados, acompanhamento dedicado e resultados reais.
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="#planos" class="btn btn--primary">
+                            Ver Planos
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                        <a href="sobremim.html" class="btn btn--outline">Sobre mim</a>
+                    </div>
+                </div>
+            </div>
+            <a href="#objetivos" class="hero__scroll">
+                <span>Scroll</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <polyline points="19 12 12 19 5 12"></polyline>
+                </svg>
+            </a>
+        </section>
+
+        <!-- Objetivos Section -->
+        <section class="objetivos section" id="objetivos">
+            <div class="container">
+                <div class="section__header" data-animate="fade-up">
+                    <span class="section__subtitle">Transformação</span>
+                    <h2 class="section__title">Qual seu objetivo?</h2>
+                    <p class="section__description">
+                        Independente do seu goal, tenho a metodologia certa para você alcançar resultados
+                    </p>
+                </div>
+
+                <div class="objetivos__grid">
+                    <article class="objetivo__card" data-animate="fade-up" data-delay="100">
+                        <div class="objetivo__image">
+                            <img src="./assets/imgs/hipertrofia.jpg" alt="Hipertrofia" loading="lazy">
+                            <div class="objetivo__overlay"></div>
+                        </div>
+                        <div class="objetivo__content">
+                            <div class="objetivo__icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6.5 6.5L17.5 17.5M6.5 6.5V11M6.5 6.5H11M17.5 17.5V13M17.5 17.5H13"></path>
+                                </svg>
+                            </div>
+                            <h3 class="objetivo__title">Hipertrofia</h3>
+                            <p class="objetivo__description">
+                                Ganhe massa muscular com treinos progressivos e periodização adequada
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="objetivo__card" data-animate="fade-up" data-delay="200">
+                        <div class="objetivo__image">
+                            <img src="./assets/imgs/emagrecimento.jpg" alt="Emagrecimento" loading="lazy">
+                            <div class="objetivo__overlay"></div>
+                        </div>
+                        <div class="objetivo__content">
+                            <div class="objetivo__icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="objetivo__title">Emagrecimento</h3>
+                            <p class="objetivo__description">
+                                Perca gordura de forma saudável mantendo sua massa muscular
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="objetivo__card" data-animate="fade-up" data-delay="300">
+                        <div class="objetivo__image">
+                            <img src="./assets/imgs/funcional.jpg" alt="Funcionalidade" loading="lazy">
+                            <div class="objetivo__overlay"></div>
+                        </div>
+                        <div class="objetivo__content">
+                            <div class="objetivo__icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="M12 6v6l4 2"></path>
+                                </svg>
+                            </div>
+                            <h3 class="objetivo__title">Funcionalidade</h3>
+                            <p class="objetivo__description">
+                                Melhore sua qualidade de vida com movimentos funcionais do dia a dia
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Planos Section -->
+        <section class="planos section" id="planos">
+            <div class="planos__bg">
+                <img src="./assets/imgs/imgplans.jpg" alt="Background" loading="lazy">
+                <div class="planos__overlay"></div>
+            </div>
+            <div class="container">
+                <div class="section__header section__header--light" data-animate="fade-up">
+                    <span class="section__subtitle">Investimento</span>
+                    <h2 class="section__title">Escolha seu plano</h2>
+                    <p class="section__description">
+                        Com minha consultoria você conseguirá realizar qualquer objetivo.
+                        Não perca tempo e venha fazer parte do time!
+                    </p>
+                </div>
+
+                <div class="planos__grid">
+                    <article class="plano__card" data-animate="fade-up" data-delay="100">
+                        <div class="plano__header">
+                            <h3 class="plano__name">Mensal</h3>
+                            <p class="plano__duration">1 mês de acompanhamento</p>
+                        </div>
+                        <div class="plano__price">
+                            <span class="plano__currency">R$</span>
+                            <span class="plano__value">170</span>
+                            <span class="plano__period">/mês</span>
+                        </div>
+                        <ul class="plano__features">
+                            <li class="plano__feature">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                Treino personalizado
+                            </li>
+                            <li class="plano__feature">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                Suporte via WhatsApp
+                            </li>
+                            <li class="plano__feature">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                Ajustes durante o mês
+                            </li>
+                            <li class="plano__feature">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                Acesso ao app de treinos
+                            </li>
+                        </ul>
+                        <button class="btn btn--primary btn--full" id="btn-mensal">
+                            Começar agora
+                        </button>
+                    </article>
+
+                    <article class="plano__card plano__card--featured" data-animate="fade-up" data-delay="200">
+                        <div class="plano__badge">Mais popular</div>
+                        <div class="plano__header">
+                            <h3 class="plano__name">Trimestral</h3>
+                            <p class="plano__duration">3 meses de acompanhamento</p>
+                        </div>
+                        <div class="plano__price">
+                            <span class="plano__currency">R$</span>
+                            <span class="plano__value">300</span>
+                            <span class="plano__period">/trimestre</span>
+                        </div>
+                        <div class="plano__savings">Economia de R$ 210</div>
+                        <ul class="plano__features">
+                            <li class="plano__feature">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                Tudo do plano mensal
+                            </li>
+                            <li class="plano__feature">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                Periodização completa
+                            </li>
+                            <li class="plano__feature">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                Avaliação física detalhada
+                            </li>
+                            <li class="plano__feature">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                Acompanhamento prioritário
+                            </li>
+                        </ul>
+                        <button class="btn btn--primary btn--full" id="btn-trimestral">
+                            Começar agora
+                        </button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq section" id="faq">
+            <div class="container">
+                <div class="faq__wrapper">
+                    <div class="faq__content" data-animate="fade-right">
+                        <span class="section__subtitle">Dúvidas</span>
+                        <h2 class="section__title">Perguntas Frequentes</h2>
+                        <p class="section__description">
+                            Tire suas principais dúvidas sobre a consultoria online
+                        </p>
+
+                        <div class="faq__accordion">
+                            <div class="faq__item active">
+                                <button class="faq__question">
+                                    <span>Como é feita a rotina de treino?</span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    </svg>
+                                </button>
+                                <div class="faq__answer">
+                                    <p>
+                                        Eu mesmo vou programar sua rotina de treino levando em consideração seu objetivo,
+                                        tempo disponível e limitações. Quero te ajudar a conquistar o objetivo que você
+                                        sempre quis e para isso só preciso da sua dedicação!
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="faq__item">
+                                <button class="faq__question">
+                                    <span>Onde o treino é disponibilizado?</span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    </svg>
+                                </button>
+                                <div class="faq__answer">
+                                    <p>
+                                        O treino é disponibilizado através de um aplicativo. É através dele que
+                                        disponibilizo também o questionário e a avaliação física! Além disso, você
+                                        terá meu contato para tirar dúvidas, fazer ajustes e melhorar a qualidade do treino.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="faq__item">
+                                <button class="faq__question">
+                                    <span>Posso treinar em casa ou na academia?</span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    </svg>
+                                </button>
+                                <div class="faq__answer">
+                                    <p>
+                                        Sim! Os treinos são adaptados ao ambiente que você tem disponível.
+                                        Seja em casa com equipamentos básicos ou na academia completa,
+                                        montamos um programa adequado para você.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq__contact" data-animate="fade-left">
+                        <div class="contact__card">
+                            <h3 class="contact__title">Ainda tem dúvidas?</h3>
+                            <p class="contact__description">
+                                Entre em contato comigo pelas redes sociais
+                            </p>
+                            <div class="contact__links">
+                                <a href="https://www.instagram.com/thiagosales_personal?igsh=M2wyZmtreXNqbmw4&utm_source=qr"
+                                   class="contact__link contact__link--instagram"
+                                   target="_blank"
+                                   rel="noopener noreferrer">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                    </svg>
+                                    <span>Instagram</span>
+                                </a>
+                                <a href="https://wa.me/message/WOTG2BNYUS7OI1"
+                                   class="contact__link contact__link--whatsapp"
+                                   target="_blank"
+                                   rel="noopener noreferrer">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                                    </svg>
+                                    <span>WhatsApp</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">Thiago<span>Sales</span></a>
+                <p class="footer__copy">
+                    &copy; 2024 Thiago Sales. Todos os direitos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
     <script src="./js/script.js"></script>
-    <script>
-        AOS.init();
-    </script>
-
 </body>
-
 </html>
