@@ -608,6 +608,80 @@ ul {
     flex-shrink: 0;
 }
 
+/* ===== SOBRE ===== */
+.sobre {
+    background: var(--color-dark-2);
+}
+
+.sobre__wrapper {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: var(--space-16);
+    align-items: center;
+}
+
+.sobre__image {
+    position: relative;
+}
+
+.sobre__image img {
+    width: 100%;
+    border-radius: var(--radius-2xl);
+    box-shadow: var(--shadow-xl);
+}
+
+.sobre__image::before {
+    content: '';
+    position: absolute;
+    top: var(--space-6);
+    left: var(--space-6);
+    right: calc(var(--space-6) * -1);
+    bottom: calc(var(--space-6) * -1);
+    border: 3px solid var(--color-primary);
+    border-radius: var(--radius-2xl);
+    z-index: -1;
+}
+
+.sobre__content .section__subtitle,
+.sobre__content .section__title {
+    text-align: left;
+}
+
+.sobre__text {
+    font-size: var(--fs-base);
+    color: var(--color-gray);
+    line-height: 1.8;
+    margin-bottom: var(--space-4);
+}
+
+.sobre__text strong {
+    color: var(--color-primary-light);
+}
+
+.sobre__badges {
+    display: flex;
+    gap: var(--space-4);
+    margin-top: var(--space-8);
+    flex-wrap: wrap;
+}
+
+.sobre__badge {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-3) var(--space-4);
+    background: rgba(124, 58, 237, 0.1);
+    border: 1px solid rgba(124, 58, 237, 0.3);
+    border-radius: var(--radius-lg);
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-medium);
+    color: var(--color-primary-light);
+}
+
+.sobre__badge svg {
+    color: var(--color-primary);
+}
+
 /* ===== FAQ ===== */
 .faq {
     background: var(--color-dark-2);
@@ -763,6 +837,24 @@ ul {
     color: var(--color-gray);
 }
 
+.footer__dev {
+    text-align: center;
+    margin-top: var(--space-6);
+    padding-top: var(--space-6);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: var(--fs-xs);
+    color: var(--color-gray-dark);
+}
+
+.footer__dev a {
+    color: var(--color-primary);
+    transition: color var(--transition-fast);
+}
+
+.footer__dev a:hover {
+    color: var(--color-primary-light);
+}
+
 /* ===== ANIMATIONS ===== */
 [data-animate] {
     opacity: 0;
@@ -809,6 +901,29 @@ ul {
     .planos__grid {
         grid-template-columns: 1fr;
         max-width: 450px;
+    }
+
+    .sobre__wrapper {
+        grid-template-columns: 1fr;
+        gap: var(--space-10);
+    }
+
+    .sobre__image {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .sobre__content .section__subtitle,
+    .sobre__content .section__title {
+        text-align: center;
+    }
+
+    .sobre__text {
+        text-align: center;
+    }
+
+    .sobre__badges {
+        justify-content: center;
     }
 }
 
